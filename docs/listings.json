@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/posts/index.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/index.html",
+      "/posts/about.html",
+      "/posts/01-Introduction/index.html",
+      "/posts/post-with-code/index.html"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/about.html",
+    "href": "posts/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/01-Introduction/index.html",
+    "href": "posts/01-Introduction/index.html",
+    "title": "Building a Pipeline for Crime Data - Introduction",
+    "section": "",
+    "text": "This project will take published data from Seattle Police Crime reports. We will be creating a pipeline for this data to be available in a database, and then map out locations for common areas of activity."
+  },
+  {
+    "objectID": "posts/01-Introduction/index.html#the-tools",
+    "href": "posts/01-Introduction/index.html#the-tools",
+    "title": "Building a Pipeline for Crime Data - Introduction",
+    "section": "The Tools",
+    "text": "The Tools\n\nSocrata API — API used by government agencies to publish crime data for many different cities across the country\nPython and SQL — For the pipeline we will be using Python to transfer into a PostgreSQL\nPolars — A DataFrame library used for the transformation"
+  },
+  {
+    "objectID": "posts/01-Introduction/index.html#why-these-tools",
+    "href": "posts/01-Introduction/index.html#why-these-tools",
+    "title": "Building a Pipeline for Crime Data - Introduction",
+    "section": "Why These Tools?",
+    "text": "Why These Tools?\nScorata API is one of the best options for crime logs and statistics, as well as being a significantly more efficient method to obtaining crime data. Polars is used within Python as much more efficient for loading larger data sets than Pandas."
+  },
+  {
+    "objectID": "posts/01-Introduction/index.html#etl-process",
+    "href": "posts/01-Introduction/index.html#etl-process",
+    "title": "Building a Pipeline for Crime Data - Introduction",
+    "section": "ETL Process",
+    "text": "ETL Process\n\nRun Socrata API to extract the data from the web.\nTransform data to be clean and ready for use.\nValidate processes."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": ".",
+    "section": "",
+    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]

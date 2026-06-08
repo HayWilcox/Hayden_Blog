@@ -1,0 +1,27 @@
+---
+title: "Building a Pipeline for Crime Data - Introduction"
+author: "Hayden Wilcox"
+date: "2026-06-06"
+categories: [python, data-engineering, etl]
+---
+
+## What Is This Project?
+
+This project will take published data from Seattle Police Crime reports. We will be creating a pipeline for this data to be available in a database, and then map out locations for common areas of activity.
+
+## The Tools
+
+- **Socrata API** — API used by government agencies to publish 
+  crime data for many different cities across the country
+- **Python and SQL** — For the pipeline we will be using Python to transfer into a PostgreSQL 
+- **Polars** — A DataFrame library used for the transformation
+
+## Why These Tools?
+
+Scorata API is one of the best options for crime logs and statistics, as well as being a significantly more efficient method to obtaining crime data. Polars is used within Python as much more efficient for loading larger data sets than Pandas.
+
+## ETL Process 
+- Run Socrata API to extract the data from the web.
+- Transform data to be clean and ready for use.
+- Validate processes.
+
