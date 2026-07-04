@@ -49,11 +49,39 @@
     "text": "ETL Process\n\nRun Socrata API to extract the data from the web.\nTransform data to be clean and ready for use.\nValidate processes."
   },
   {
+    "objectID": "posts/02-Beginning-the-ETL-Process/index.html",
+    "href": "posts/02-Beginning-the-ETL-Process/index.html",
+    "title": "Extract, Load, and Transform - Getting everything I need in one place.",
+    "section": "",
+    "text": "ETL (Extract, Transform, Load) is pretty standard procedure for data engineering. Breaking it down it is sthe step by step process of getting this data into a database for further use."
+  },
+  {
+    "objectID": "posts/02-Beginning-the-ETL-Process/index.html#extract",
+    "href": "posts/02-Beginning-the-ETL-Process/index.html#extract",
+    "title": "Extract, Load, and Transform - Getting everything I need in one place.",
+    "section": "Extract",
+    "text": "Extract\nRight of the bat, Socrata API becomes one of the greatest assets to extracting Seattle’s crime data. As mentioned before Socrata is used by government agencies to publish crime data. It will scrape Seattle’s public records on the Police department’s website. Because it contains such vast data, I limited the results to just 50,000 results as too much at once can crash less powerful computers. Finished this process by loading it into a Polars dataframe."
+  },
+  {
+    "objectID": "posts/02-Beginning-the-ETL-Process/index.html#transform",
+    "href": "posts/02-Beginning-the-ETL-Process/index.html#transform",
+    "title": "Extract, Load, and Transform - Getting everything I need in one place.",
+    "section": "Transform",
+    "text": "Transform\nTwo files are attached to this process (the obvious “transform.py”, as well as validate.py). The first begins by doing a lot of clean up. This amounts to removing duplicates and null/NA type values. It splits our time values into individual unique columns, as well as properly assigning datatypes for latitude and longitude columns. This is vital for better data manipulation which will come in to play with GIS mapping later on. The validate file does exactly what its title would imply; verifies expected columns and their logic."
+  },
+  {
+    "objectID": "posts/02-Beginning-the-ETL-Process/index.html#load",
+    "href": "posts/02-Beginning-the-ETL-Process/index.html#load",
+    "title": "Extract, Load, and Transform - Getting everything I need in one place.",
+    "section": "Load",
+    "text": "Load\nConnecting through the env file, we find the path for the data. Here we get to create the table in a SQL query that will let us have fun later. SQLAlchemy allows to both write the query for the table and the engine to execute."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": ".",
     "section": "",
-    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nExtract, Load, and Transform - Getting everything I need in one place.\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

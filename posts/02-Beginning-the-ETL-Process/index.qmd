@@ -1,0 +1,27 @@
+---
+title: "Extract, Load, and Transform - Getting everything I need in one place."
+author: "Hayden Wilcox"
+date: "2026-06-27"
+categories: [python, sql, data-engineering, etl]
+---
+
+## The Process
+
+ETL (Extract, Transform, Load) is pretty standard procedure for data engineering. Breaking it down it is sthe step by step process of getting this data into a database for further use.
+
+## Extract
+
+Right of the bat, Socrata API becomes one of the greatest assets to extracting Seattle's crime data. As mentioned before Socrata is used by government agencies to publish crime data. It will scrape Seattle's public records on the Police department's website. Because it contains such vast data, I limited the results to just 50,000 results as too much at once can crash less powerful computers. Finished this process by loading it into a Polars dataframe.
+
+## Transform
+
+Two files are attached to this process (the obvious "transform.py", as well as validate.py). The first begins by doing a lot of clean up. This amounts to removing duplicates and null/NA type values. It splits our time values into individual unique columns, as well as properly assigning datatypes for latitude and longitude columns. This is vital for better data manipulation  which will come in to play with GIS mapping later on. The validate file does exactly what its title would imply; verifies expected columns and their logic.
+
+
+
+## Load
+
+Connecting through the env file, we find the path for the data. Here we get to create the table in a SQL query that will let us have fun later. SQLAlchemy allows to both write the query for the table and the engine to execute.
+
+
+
