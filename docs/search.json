@@ -77,11 +77,25 @@
     "text": "Load\nConnecting through the env file, we find the path for the data. Here we get to create the table in a SQL query that will let us have fun later. SQLAlchemy allows to both write the query for the table and the engine to execute."
   },
   {
+    "objectID": "posts/03-Fixing Bugs and Creating Dashboard/index.html",
+    "href": "posts/03-Fixing Bugs and Creating Dashboard/index.html",
+    "title": "Bugs, Pipeline, and Dashboard",
+    "section": "",
+    "text": "This was the part that took the longest, as many adjustments had to be made for the formatting of the pipeline to go into Polars. Additionally, I had to spend some time setting up Docker to be able to run PostgreSQL after fixing the pipeline’s issues. It ran fine afterwards and I was able to get what I needed. Witho the amount of data that Seattle contains, it’s worth considering using something like MangoDB or DuckDB to run ALL of the data. For time’s sake, I’m leaving it as is, but this will be worth looking into later on for optimization purposes."
+  },
+  {
+    "objectID": "posts/03-Fixing Bugs and Creating Dashboard/index.html#dashboard",
+    "href": "posts/03-Fixing Bugs and Creating Dashboard/index.html#dashboard",
+    "title": "Bugs, Pipeline, and Dashboard",
+    "section": "Dashboard",
+    "text": "Dashboard\nAfter wrapping up with those fixes, I began work on getting a dashboard with the basic crime analytics needed. Even though I’m still not 100% familiar with navigating Metabase’s system and UI, I found that producing general analyitcs for my data was relatively simple. For example, we almost immediately visualize property crime as the most common category. We have a map with all the points automatically highlighted at the top as well. This is like a small sample of what we’ll do in our GIS work."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": ".",
     "section": "",
-    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nExtract, Load, and Transform - Getting everything I need in one place.\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nBugs, Pipeline, and Dashboard\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtract, Load, and Transform - Getting everything I need in one place.\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
