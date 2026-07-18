@@ -1,0 +1,26 @@
+---
+title: "GeoPandas, PySAL, and Creating Hotmaps Package"
+author: "Hayden Wilcox"
+date: "2026-07-17"
+categories: [python, geopandas, pysal]
+---
+
+## GeoPandas
+
+Last part of this project had me learning a lot of previously unfamiliar tools. GeoPandas is the most commonly used package in Python for GIS work. The formatting is very similar to (believe it or not) Pandas, and loading in files and performing basic functions is about the same. I had to go back and update in the load file, and added a geometry column based on the latitude and longitude. This is essential, along with getting a coordinate. 4326 is a standard identifier for maps, something that doesn't need to be explained to GIS experts, but I had to write this in load.py as well as write this in the crs before beginning my work. 
+
+## PySAL
+
+PySAL is a more niche package for construction and ineractive editing of spatial weights matrices and graphs. Documentation and videos definitely are out there, but I had to do more digging to be able to get a good start. I begin by choosing the method to measure the neighborhoods to see significance. I used "Queen Contiguity" which compares all surrounding neighborhoods to one another. Here I established a cold/hot map to indicate the hotspots on the map beforehnad. PySAL along with the help of the Folium and Leaflet packages help create a more detailed hotspot map.
+
+## Creating hotmaps: My Python Package
+
+The process of setup is a bit verbose and lengthy. Which is what gave me the idea of hotmaps. Not only does it make a lot of this work easier to do, I think this would be great to pitch it's use to make the work easier as well as more appealing for use. Looking at a lot of government websites with any kind of GIS mapping, they aren't particularly good, and I think not only can more be done in those types of settings, but it can be done mor easily while retaining quality.
+
+Main Package features:
+    - Loading my databse
+    - Time Filter
+    - Build Weights
+    - Visualize with the maps
+
+

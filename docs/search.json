@@ -91,11 +91,53 @@
     "text": "Dashboard\nAfter wrapping up with those fixes, I began work on getting a dashboard with the basic crime analytics needed. Even though I’m still not 100% familiar with navigating Metabase’s system and UI, I found that producing general analyitcs for my data was relatively simple. For example, we almost immediately visualize property crime as the most common category. We have a map with all the points automatically highlighted at the top as well. This is like a small sample of what we’ll do in our GIS work."
   },
   {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html",
+    "href": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "",
+    "text": "This is the beginning of the end, as well as learning a lot of previously unfamiliar tools. GeoPandas is the most commonly used package in Python for GIS work. The formatting is very similar to (believe it or not) Pandas, and loading in files and performing basic functions is about the same. I had to go back and update in the load file, and added a geometry column based on the latitude and longitude. This is essential, along with getting a coordinate. 4326 is a standard identifier for maps, something that doesn’t need to be explained to GIS experts, but I had to write this in load.py as well as write this in the crs before beginning my work."
+  },
+  {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html#pysal",
+    "href": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html#pysal",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "PySAL",
+    "text": "PySAL\nPySAL is a more niche package for construction and ineractive editing of spatial weights matrices and graphs. Documentation and videos definitely are out there, but I had to do more digging to be able to get a good start. I begin by choosing the method to measure the neighborhoods to see significance. I used “Queen Contiguity” which compares all surrounding neighborhoods to one another. Here I established a cold/hot map to indicate the hotspots on the map beforehnad. PySAL along with the help of the Folium and Leaflet packages help create a more detailed hotspot map."
+  },
+  {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html#creating-hotmaps-my-python-package",
+    "href": "posts/04-GeoPandas, PySAL, and Creating Hotmaps Package/index.html#creating-hotmaps-my-python-package",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "Creating hotmaps: My Python Package",
+    "text": "Creating hotmaps: My Python Package\nThe process of setup is a bit verbose and lengthy. Which is what gave me the idea of hotmaps. Not only does it make a lot of this work easier to do, I think this would be great to pitch it’s use to make the work easier as well as more appealing for use. Looking at a lot of government websites with any kind of GIS mapping, they aren’t particularly good, and I think not only can more be done in those types of settings, but it can be done mor easily while retaining quality.\nMain Package features: - Loading my databse - Time Filter - Build Weights - Visualize with the maps"
+  },
+  {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html",
+    "href": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "",
+    "text": "Last part of this project had me learning a lot of previously unfamiliar tools. GeoPandas is the most commonly used package in Python for GIS work. The formatting is very similar to (believe it or not) Pandas, and loading in files and performing basic functions is about the same. I had to go back and update in the load file, and added a geometry column based on the latitude and longitude. This is essential, along with getting a coordinate. 4326 is a standard identifier for maps, something that doesn’t need to be explained to GIS experts, but I had to write this in load.py as well as write this in the crs before beginning my work."
+  },
+  {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html#pysal",
+    "href": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html#pysal",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "PySAL",
+    "text": "PySAL\nPySAL is a more niche package for construction and ineractive editing of spatial weights matrices and graphs. Documentation and videos definitely are out there, but I had to do more digging to be able to get a good start. I begin by choosing the method to measure the neighborhoods to see significance. I used “Queen Contiguity” which compares all surrounding neighborhoods to one another. Here I established a cold/hot map to indicate the hotspots on the map beforehnad. PySAL along with the help of the Folium and Leaflet packages help create a more detailed hotspot map."
+  },
+  {
+    "objectID": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html#creating-hotmaps-my-python-package",
+    "href": "posts/04-GeoPandas, PySAL, and Creating hotmaps./index.html#creating-hotmaps-my-python-package",
+    "title": "GeoPandas, PySAL, and Creating Hotmaps Package",
+    "section": "Creating hotmaps: My Python Package",
+    "text": "Creating hotmaps: My Python Package\nThe process of setup is a bit verbose and lengthy. Which is what gave me the idea of hotmaps. Not only does it make a lot of this work easier to do, I think this would be great to pitch it’s use to make the work easier as well as more appealing for use. Looking at a lot of government websites with any kind of GIS mapping, they aren’t particularly good, and I think not only can more be done in those types of settings, but it can be done mor easily while retaining quality.\nMain Package features: - Loading my databse - Time Filter - Build Weights - Visualize with the maps"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": ".",
     "section": "",
-    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nBugs, Pipeline, and Dashboard\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtract, Load, and Transform - Getting everything I need in one place.\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nGeoPandas, PySAL, and Creating Hotmaps Package\n\n\n\n\n\n\n\npython\n\n\ngeopandas\n\n\npysal\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeoPandas, PySAL, and Creating Hotmaps Package\n\n\n\n\n\n\n\npython\n\n\ngeopandas\n\n\npysal\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBugs, Pipeline, and Dashboard\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtract, Load, and Transform - Getting everything I need in one place.\n\n\n\n\n\n\n\npython\n\n\nsql\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Pipeline for Crime Data - Introduction\n\n\n\n\n\n\n\npython\n\n\ndata-engineering\n\n\netl\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\nHayden Wilcox\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
